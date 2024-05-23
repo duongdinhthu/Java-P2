@@ -8,7 +8,6 @@ import com.google.gson.JsonObject;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.math.BigDecimal;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class GsonWrite {

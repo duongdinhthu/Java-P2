@@ -3,17 +3,18 @@ package jsonExample;
 import com.github.cliftonlabs.json_simple.JsonArray;
 import com.github.cliftonlabs.json_simple.JsonObject;
 import com.github.cliftonlabs.json_simple.Jsoner;
-
 import java.io.BufferedWriter;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Write_JSON_simple {
     public static void main(String[] args) throws IOException {
         BufferedWriter writer = Files.newBufferedWriter(Paths.get("employee.json"));
-
+        Map<String,Object> objectMap = new HashMap<>();
         //Tạo đối tượng employee
         JsonObject employee = new JsonObject();
         employee.put("id",1);
@@ -42,6 +43,5 @@ public class Write_JSON_simple {
         //Ghi file JSON
         Jsoner.serialize(employee, writer);
         writer.close();
-
     }
 }

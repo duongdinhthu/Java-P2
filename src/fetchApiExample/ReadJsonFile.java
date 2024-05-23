@@ -1,4 +1,4 @@
-package fetchAPIExample;
+package fetchApiExample;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;

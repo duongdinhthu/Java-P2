@@ -1,13 +1,8 @@
 package relearnConectCRUD.model;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-import com.google.gson.JsonObject;
 import relearnConectCRUD.connectDTB.MySqlConnect;
-import relearnConectCRUD.entity.Customer;
 import relearnConectCRUD.entity.Entity;
 
-import java.io.FileWriter;
 import java.io.IOException;
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
@@ -15,11 +10,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
+import java.util.*;
 
 
 public class Model<T extends Entity<?>> implements ModelDAO {
@@ -211,6 +202,15 @@ public class Model<T extends Entity<?>> implements ModelDAO {
 
             entities.add(newEntity);
         }
+        String method = "getAll_";
+        Scanner input = new Scanner(System.in);
+        System.out.print("Bạn có muốn lưu dữ liệu vào file json? (yes/no): ");
+        String confirmation = input.nextLine();
+        if (confirmation.equalsIgnoreCase("yes")) {
+            entityToJSON.writeEmployeeToJson(entities, entityClass, method);
+        } else {
+            System.out.println("Hành động không được thực hiện.");
+        }
 
         return entities;
     }
@@ -226,7 +226,9 @@ public class Model<T extends Entity<?>> implements ModelDAO {
         }
         return newEntity;
     }
+
     EntityToJSON entityToJSON = new EntityToJSON();
+
     @Override
     public List<T> getEntityById(Entity entity) throws SQLException, IllegalAccessException, InstantiationException, IOException {
         String query = queryGetEntityById(entity).toString();
@@ -255,7 +257,17 @@ public class Model<T extends Entity<?>> implements ModelDAO {
             entityList.add(newEntity);
 
         }
-        entityToJSON.writeEmployeeToJson(entityList,entity);
+        String method = "getId_" + value + "_";
+        Scanner input = new Scanner(System.in);
+        System.out.print("Bạn có muốn lưu dữ liệu vào file json? (yes/no): ");
+        String confirmation = input.nextLine();
+
+        if (confirmation.equalsIgnoreCase("yes")) {
+            entityToJSON.writeEmployeeToJson(entityList, entity.getClass(), method);
+        } else {
+            System.out.println("Hành động không được thực hiện.");
+        }
+
         return entityList;
 
     }
