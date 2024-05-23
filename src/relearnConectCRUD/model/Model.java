@@ -255,7 +255,7 @@ public class Model<T extends Entity<?>> implements ModelDAO {
             entityList.add(newEntity);
 
         }
-        entityToJSON.writeEmployeeToJson(entityList);
+        entityToJSON.writeEmployeeToJson(entityList,entity);
         return entityList;
 
     }

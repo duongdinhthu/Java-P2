@@ -11,11 +11,10 @@ import java.io.IOException;
 import java.util.List;
 
 public class EntityToJSON <T extends Entity<?>>{
-    public void writeEmployeeToJson(List<T> entity) throws IOException {
-        System.out.println("ok123");
+    public void writeEmployeeToJson(List<T> entitties,Entity entity) throws IOException {
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
-        FileWriter writer = new FileWriter(entity.getClass() + ".json");
-        gson.toJson(entity, writer);
+        FileWriter writer = new FileWriter(entity.getClass().getSimpleName() + ".json");
+        gson.toJson(entitties, writer);
         writer.close();
     }
 }

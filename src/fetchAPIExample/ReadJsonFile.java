@@ -11,7 +11,7 @@ public class ReadJsonFile {
     public static void main(String[] args) {
         try {
             // Đường dẫn của tệp JSON cần đọc
-            String filePath = "api.json";
+            String filePath = "customer.json";
 
             // Mở FileReader để đọc tệp JSON
             FileReader reader = new FileReader(filePath);
