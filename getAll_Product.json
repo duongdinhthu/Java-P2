@@ -1,0 +1,50 @@
+[
+  {
+    "product_id": 1,
+    "product_name": "Vu",
+    "description": "dep trai",
+    "price": 9.99
+  },
+  {
+    "product_id": 2,
+    "product_name": "Thu",
+    "description": "dep trai",
+    "price": 10.00
+  },
+  {
+    "product_id": 3,
+    "product_name": "Hoang lop truong",
+    "description": "Dep trai",
+    "price": 50.00
+  },
+  {
+    "product_id": 4,
+    "product_name": "nokia",
+    "description": "hang moi",
+    "price": 10.00
+  },
+  {
+    "product_id": 5,
+    "product_name": "Vu dinh cao",
+    "description": "nha hoi giau",
+    "price": 7.00
+  },
+  {
+    "product_id": 6,
+    "product_name": "ẻgerg",
+    "description": "reger",
+    "price": 9.99
+  },
+  {
+    "product_id": 7,
+    "product_name": "reg",
+    "description": "reg",
+    "price": 234.42
+  },
+  {
+    "product_id": 8,
+    "product_name": "thu",
+    "description": "ok",
+    "price": 9.99
+  }
+]

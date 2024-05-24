@@ -204,9 +204,9 @@ public class Model<T extends Entity<?>> implements ModelDAO {
         }
         String method = "getAll_";
         Scanner input = new Scanner(System.in);
-        System.out.print("Bạn có muốn lưu dữ liệu vào file json? (yes/no): ");
+        System.out.print("Bạn có muốn lưu dữ liệu vào file json? (y/n): ");
         String confirmation = input.nextLine();
-        if (confirmation.equalsIgnoreCase("yes")) {
+        if (confirmation.equalsIgnoreCase("y")) {
             entityToJSON.writeEmployeeToJson(entities, entityClass, method);
         } else {
             System.out.println("Hành động không được thực hiện.");
@@ -259,15 +259,14 @@ public class Model<T extends Entity<?>> implements ModelDAO {
         }
         String method = "getId_" + value + "_";
         Scanner input = new Scanner(System.in);
-        System.out.print("Bạn có muốn lưu dữ liệu vào file json? (yes/no): ");
+        System.out.print("Bạn có muốn lưu dữ liệu vào file json? (y/n): ");
         String confirmation = input.nextLine();
 
-        if (confirmation.equalsIgnoreCase("yes")) {
+        if (confirmation.equalsIgnoreCase("y")) {
             entityToJSON.writeEmployeeToJson(entityList, entity.getClass(), method);
         } else {
             System.out.println("Hành động không được thực hiện.");
         }
-
         return entityList;
 
     }

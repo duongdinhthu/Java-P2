@@ -11,6 +11,5 @@ public class Application {
         View view = new View();
         view.choiceMenu();
 //
-
     }
 }
