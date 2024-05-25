@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "name": "thu",
+    "address": "thai binh",
+    "email": "duongthu@gmail.com",
+    "phone": "0981300594",
+    "dob": "May 17, 2024"
+  },
+  {
+    "id": 2,
+    "name": "vu",
+    "address": "Ha Noi",
+    "email": "duongthu@gmail.com",
+    "phone": "0981300594",
+    "dob": "May 17, 2024"
+  }
+]
