@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/css" href="style.css"?>
+<data>
+    <product_id>2</product_id>
+    <product_name>Thu</product_name>
+    <description>ok</description>
+    <price>10.00</price>
+</data>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><data><product_id>2</product_id><product_name>Thu</product_name><description>ok</description><price>10.00</price></data>

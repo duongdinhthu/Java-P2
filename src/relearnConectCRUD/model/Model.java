@@ -190,7 +190,7 @@ public class Model<T extends Entity<?>> implements ModelDAO {
     }
 
     @Override
-    public List<T> getAll(Class entityClass) throws SQLException, InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException, IOException {
+    public List<T> getAll(Class entityClass) throws Exception {
         List<T> entities = new ArrayList<>();
         String query = queryGetAll(entityClass).toString();
         System.out.println(query);
@@ -230,7 +230,7 @@ public class Model<T extends Entity<?>> implements ModelDAO {
     EntityToJSON entityToJSON = new EntityToJSON();
 
     @Override
-    public List<T> getEntityById(Entity entity) throws SQLException, IllegalAccessException, InstantiationException, IOException {
+    public List<T> getEntityById(Entity entity) throws Exception {
         String query = queryGetEntityById(entity).toString();
         openPstm(query);
         Field[] fields = entity.getClass().getDeclaredFields();

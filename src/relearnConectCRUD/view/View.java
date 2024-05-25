@@ -42,7 +42,7 @@ public class View {
         System.out.println("0. Back");
     }
 
-    public void choiceMenu() throws SQLException, IllegalAccessException, InstantiationException, InvocationTargetException, NoSuchMethodException, IOException {
+    public void choiceMenu() throws Exception {
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
@@ -84,7 +84,7 @@ public class View {
         System.out.println("0. Back");
     }
 
-    public void productChoice() throws SQLException, IllegalAccessException, InvocationTargetException, NoSuchMethodException, InstantiationException, IOException {
+    public void productChoice() throws Exception {
         Scanner scanner = new Scanner(System.in);
         boolean exit = false;
         while (!exit) {
@@ -122,7 +122,7 @@ public class View {
         }
     }
 
-    public void ordersChoice() throws SQLException, IllegalAccessException, InvocationTargetException, NoSuchMethodException, InstantiationException, IOException {
+    public void ordersChoice() throws Exception {
         Scanner scanner = new Scanner(System.in);
         boolean exit = false;
         while (!exit) {
@@ -170,7 +170,7 @@ public class View {
         System.out.println("0. Back");
     }
 
-    public void customerChoice() throws SQLException, IllegalAccessException, InstantiationException, InvocationTargetException, NoSuchMethodException, IOException {
+    public void customerChoice() throws Exception {
         Scanner scanner = new Scanner(System.in);
         boolean exit = false;
         while (!exit) {
@@ -380,7 +380,7 @@ public class View {
         ordersController.delete(orders);
     }
 
-    public void getAllCustomer() throws SQLException, InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException, IOException {
+    public void getAllCustomer() throws Exception {
         Customer customer = new Customer();
         List<Customer> list = customerController.list(customer);
         for (Customer l : list) {
@@ -388,7 +388,7 @@ public class View {
         }
     }
 
-    public void getAllProduct() throws SQLException, InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException, IOException {
+    public void getAllProduct() throws Exception {
         Product product = new Product();
         List<Product> list = productController.list(product);
         for (Product l : list) {
@@ -396,7 +396,7 @@ public class View {
         }
     }
 
-    public void getAllOrders() throws SQLException, InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException, IOException {
+    public void getAllOrders() throws Exception {
         Orders orders = new Orders();
         List<Orders> list = ordersController.list(orders);
         for (Orders l : list) {
@@ -404,7 +404,7 @@ public class View {
         }
     }
 
-    public void getCustomerById() throws SQLException, IllegalAccessException, InstantiationException, InvocationTargetException, NoSuchMethodException, IOException {
+    public void getCustomerById() throws Exception {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter the id customer search");
         int id = scanner.nextInt();
@@ -416,7 +416,7 @@ public class View {
         }
     }
 
-    public void getProductById() throws SQLException, IllegalAccessException, InstantiationException, InvocationTargetException, NoSuchMethodException, IOException {
+    public void getProductById() throws Exception {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter the id Product search:");
         int id = scanner.nextInt();
@@ -429,7 +429,7 @@ public class View {
 
     }
 
-    public void getOrdersById() throws SQLException, IllegalAccessException, InstantiationException, InvocationTargetException, NoSuchMethodException, IOException {
+    public void getOrdersById() throws Exception {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter the id customer search");
         int id = scanner.nextInt();

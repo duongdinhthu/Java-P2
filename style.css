@@ -1,0 +1,24 @@
+data {
+    display: block;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: red;
+}
+
+customer_id {
+    font-weight: bold;
+    background-color: #cccccc;
+}
+
+first_name, last_name {
+    text-transform: uppercase;
+}
+
+email {
+    color: blue;
+}
+
+phone {
+    color: green;
+}

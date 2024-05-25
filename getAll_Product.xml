@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<data>
+    <product_id>1</product_id>
+    <product_name>Vu</product_name>
+    <description>dep trai</description>
+    <price>9.99</price>
+</data><?xml version="1.0" encoding="UTF-8" standalone="no"?><data>
+<product_id>2</product_id>
+<product_name>Thu</product_name>
+<description>ok</description>
+<price>10.00</price>
+</data><?xml version="1.0" encoding="UTF-8" standalone="no"?><data>
+<product_id>3</product_id>
+<product_name>Hoang lop truong</product_name>
+<description>Dep trai</description>
+<price>50.00</price>
+</data><?xml version="1.0" encoding="UTF-8" standalone="no"?><data>
+<product_id>4</product_id>
+<product_name>nokia</product_name>
+<description>hang moi</description>
+<price>10.00</price>
+</data><?xml version="1.0" encoding="UTF-8" standalone="no"?><data>
+<product_id>5</product_id>
+<product_name>Vu dinh cao</product_name>
+<description>nha hoi giau</description>
+<price>7.00</price>
+</data><?xml version="1.0" encoding="UTF-8" standalone="no"?><data>
+<product_id>6</product_id>
+<product_name>ẻgerg</product_name>
+<description>reger</description>
+<price>9.99</price>
+</data><?xml version="1.0" encoding="UTF-8" standalone="no"?><data>
+<product_id>7</product_id>
+<product_name>reg</product_name>
+<description>reg</description>
+<price>234.42</price>
+</data><?xml version="1.0" encoding="UTF-8" standalone="no"?><data>
+<product_id>8</product_id>
+<product_name>thu</product_name>
+<description>ok</description>
+<price>9.99</price>
+</data>

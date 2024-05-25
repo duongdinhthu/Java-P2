@@ -24,11 +24,11 @@ public class Controller <T extends Entity<?>> {
     public void delete(Entity entity) throws SQLException, IllegalAccessException {
         model.delete(entity);
     }
-    public List<T> list(Entity entity) throws SQLException, InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException, IOException {
+    public List<T> list(Entity entity) throws Exception {
         List<T> list = model.getAll(entity.getClass());
         return list;
     }
-    public List<T> getEntityById(Entity entity) throws SQLException, IllegalAccessException, InstantiationException, InvocationTargetException, NoSuchMethodException, IOException {
+    public List<T> getEntityById(Entity entity) throws Exception {
 
         List<T> entity1 = model.getEntityById(entity);
         return entity1;

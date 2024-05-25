@@ -7,7 +7,7 @@ import java.lang.reflect.InvocationTargetException;
 import java.sql.SQLException;
 
 public class Application {
-    public static void main(String[] args) throws SQLException, IllegalAccessException, InstantiationException, InvocationTargetException, NoSuchMethodException, IOException {
+    public static void main(String[] args) throws Exception {
         View view = new View();
         view.choiceMenu();
 //

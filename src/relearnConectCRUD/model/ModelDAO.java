@@ -15,8 +15,8 @@ public interface ModelDAO <T extends Entity<?>> {
 
     public boolean delete(Entity entity) throws IllegalAccessException, SQLException;
 
-    public List getEntityById(Entity entity) throws SQLException, IllegalAccessException, InstantiationException, IOException;
+    public List getEntityById(Entity entity) throws Exception;
 
-    public List getAll(Class entityClass) throws SQLException, InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException, IOException;
+    public List getAll(Class entityClass) throws Exception;
 
 }
