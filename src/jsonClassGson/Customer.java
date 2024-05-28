@@ -9,8 +9,9 @@ public class Customer {
     private int customer_id;
     private String customer_name;
     private String customer_email;
-    private List orders;
-    private List country;
+
+    private List<Orders> orders;
+    private String country;
 
     @Override
     public String toString() {
@@ -24,7 +25,15 @@ public class Customer {
                 ", customer_phone=" + customer_phone +
                 '}';
     }
-
+    public Customer(int customer_id, String customer_name, String customer_email, List<Orders> orders, String country, String customer_address, int customer_phone) {
+        this.customer_id = customer_id;
+        this.customer_name = customer_name;
+        this.customer_email = customer_email;
+        this.orders = orders;
+        this.country = country;
+        this.customer_address = customer_address;
+        this.customer_phone = customer_phone;
+    }
     public List getOrders() {
         return orders;
     }
@@ -33,11 +42,11 @@ public class Customer {
         this.orders = orders;
     }
 
-    public List getCountry() {
+    public String getCountry() {
         return country;
     }
 
-    public void setCountry(List country) {
+    public void setCountry(String country) {
         this.country = country;
     }
 
@@ -45,11 +54,13 @@ public class Customer {
     private int customer_phone;
     public JsonObject toJsonObject() {
         JsonObject jsonObject = new JsonObject();
-        jsonObject.addProperty("id", customer_id);
-        jsonObject.addProperty("name", customer_name);
-        jsonObject.addProperty("email", customer_email);
-        jsonObject.addProperty("address", customer_address);
-        jsonObject.addProperty("phone", customer_phone);
+        jsonObject.addProperty("customer_id", customer_id);
+        jsonObject.addProperty("customer_name", customer_name);
+        jsonObject.addProperty("customer_email", customer_email);
+        jsonObject.addProperty("customer_address", customer_address);
+        jsonObject.addProperty("customer_phone", customer_phone);
+        jsonObject.addProperty("country", country);
+
         return jsonObject;
     }
     public int getCustomer_id() {

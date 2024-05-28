@@ -1,0 +1,18 @@
+{
+  "customer_id": 1,
+  "customer_name": "duong dinh thu",
+  "customer_email": "thu@gmail.com",
+  "customer_address": "Ha Noi",
+  "customer_phone": 123456,
+  "country": "Viet nam",
+  "orders": [
+    {
+      "id": 1,
+      "price": 9.99
+    },
+    {
+      "id": 2,
+      "price": 8.99
+    }
+  ]
+}

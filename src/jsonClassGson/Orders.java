@@ -8,6 +8,14 @@ public class Orders {
     private int id;
     private BigDecimal price;
 
+    @Override
+    public String toString() {
+        return "Orders{" +
+                "id=" + id +
+                ", price=" + price +
+                '}';
+    }
+
     public Orders() {
     }
 

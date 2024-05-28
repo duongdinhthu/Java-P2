@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="style.xsl"?>
+<products>
+    <data>
+        <product_id>2</product_id>
+        <product_name>Thu</product_name>
+        <description>ok</description>
+        <price>10.00</price>
+    </data>
+    <data>
+        <product_id>3</product_id>
+        <product_name>Minh</product_name>
+        <description>good</description>
+        <price>20.00</price>
+    </data>
+    <!-- Các thẻ <data> khác -->
+</products>

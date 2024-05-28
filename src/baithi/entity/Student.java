@@ -1,6 +1,12 @@
 package baithi.entity;
 
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Locale;
 
 public class Student extends Entity<Integer>{
     private int id;
@@ -20,6 +26,21 @@ public class Student extends Entity<Integer>{
     }
 
     public Student() {
+    }
+    public Student(JsonElement object) {
+        JsonObject jsonObject = object.getAsJsonObject();
+        this.id = jsonObject.get("id").getAsInt();
+        this.name = jsonObject.get("name").getAsString();
+        this.address = jsonObject.get("address").getAsString();
+        this.email = jsonObject.get("email").getAsString();
+        this.phone = jsonObject.get("phone").getAsString();
+
+        SimpleDateFormat dateFormat = new SimpleDateFormat("MMM dd, yyyy", Locale.ENGLISH); // Định dạng ngày tháng đúng
+        try {
+            this.dob = dateFormat.parse(jsonObject.get("dob").getAsString());
+        } catch (ParseException e) {
+            e.printStackTrace(); // Xử lý nếu có lỗi parsing ngày tháng
+        }
     }
 
     @Override

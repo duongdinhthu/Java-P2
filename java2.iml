@@ -10,5 +10,8 @@
     <orderEntry type="library" name="gson-2.8.5" level="project" />
     <orderEntry type="library" name="json-simple-3.1.1" level="project" />
     <orderEntry type="library" name="mysql-connector-java-8.0.28" level="project" />
+    <orderEntry type="library" name="saxon-he-12.4" level="project" />
+    <orderEntry type="library" name="mail-1.4.7" level="project" />
+    <orderEntry type="library" name="activation-1.1.1" level="project" />
   </component>
 </module>
